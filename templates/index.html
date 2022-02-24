@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Team Logistic Regression</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+ <div class="login">
+	<h1>Predict Weather Outlook</h1>
+    <h2 style="color:black;">{{ prediction_text }}</h2> 
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action= "/predict/" method="post">
+    	<input type="number" name="pressure" placeholder="Enter Pressure (usually 4 digits)" required="required" step = 'number'/>
+        <input type="number" name="temperature" placeholder="Enter Temperature (usually 3 digits)" required="required" step = 'number'/>
+        <input type="number" name="humidity" placeholder="Enter Humidity (usually 2 digits)" required="required" step = 'number'/>
+        <input type="number" name="wind speed" placeholder="Enter Wind Speed (usually 1 digit)" required="required" step = 'number'/>
+        <input type="number" name="wind direction" placeholder="Enter Wind Direction (usually 3 digits)" required="required" step = 'number'/>
+        <input type="number" name="year" placeholder="Enter Year" required="required" step = 'number'/>
+        <input type="number" name="month" placeholder="Enter Month" required="required" step = 'number'/>
+        <input type="number" name="day" placeholder="Enter Day" required="required" step = 'number'/>
+        <input type="number" name="hour" placeholder="Enter Hour" required="required" step = 'number'/>
+        <input type="number" name="average humidity" placeholder="Enter Average Humidity (usually 2 digits)" required="required" step = 'number'/>
+        <input type="number" name="average pressure" placeholder="Enter Average Pressure (usually 4 digits)" required="required" step = 'number'/>
+        <input type="number" name="average temperature" placeholder="Enter Average Temperature (usually 3 digits)" required="required" step = 'number'/>
+        <input type="number" name="average wind direction" placeholder="Enter Average Wind Direction (usually 3 digits)" required="required" step = 'number'/>
+        <input type="number" name="average wind speed" placeholder="Enter Average Wind Speed (usually 1 digit) " required="required" step = 'number'/>
+        
+        <button type="submit" name = "See Weather Outlook" placeholder = "See Weather Outlook" class="btn btn-primary btn-block btn-large">See Weather Outlook</button>
+    </form>
+
+   <br>
+   <br>
+
+   
+
+ </div>
+
+
+</body>
+</html>
