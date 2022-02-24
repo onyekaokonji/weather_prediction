@@ -13,7 +13,7 @@
   <li>Python</li>
   <li>HTML</li>
   <li>CSS</li>
-  <li>Flak</li>
+  <li>Flask</li>
   <li>Heroku</li>
 </ol>
 
