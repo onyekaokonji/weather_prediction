@@ -17,4 +17,4 @@
   <li>Heroku</li>
 </ol>
 
-###### Demo of web-app
+###### Heroku deployed app: https://rhema-weather-prediction-app.herokuapp.com/
